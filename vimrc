@@ -1,7 +1,6 @@
 call pathogen#runtime_append_all_bundles() 
-colorscheme vividchalk
 
-syntax on
+colorscheme vividchalk
 
 set nocompatible
 set number
@@ -20,6 +19,10 @@ set autoindent
 filetype on
 filetype indent on
 filetype plugin on
+
+syntax on
+
+map <C-e> :MRU<Enter>
 
 """ Gets rid of arrow keys but screws other stuff up I think.
 "noremap  <Up> ""
