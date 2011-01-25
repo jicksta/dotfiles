@@ -1,9 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =1
 let g:netrw_dirhist_1='/Users/jicksta/ourvirtues'
-let g:netrw_dirhist_2='/Users/jicksta/code/vimstuff/vim/bundle'
-let g:netrw_dirhist_3='/Users/jicksta/ourvirtues'
-let g:netrw_dirhist_4='/Users/jicksta'
-let g:netrw_dirhist_5='/Users/jicksta/ourvirtues'
-let g:netrw_dirhist_6='/Users/jicksta/ourvirtues/app'
-let g:netrw_dirhist_7='/Users/jicksta/ourvirtues'
