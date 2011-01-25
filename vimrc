@@ -1,4 +1,5 @@
 call pathogen#runtime_append_all_bundles() 
+call pathogen#helptags()
 
 colorscheme vividchalk
 
@@ -22,7 +23,7 @@ filetype plugin on
 
 syntax on
 
-map <C-e> :MRU<Enter>
+map <Leader>e :MRU<Enter>
 
 """ Gets rid of arrow keys but screws other stuff up I think.
 "noremap  <Up> ""

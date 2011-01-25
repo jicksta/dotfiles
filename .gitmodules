@@ -28,3 +28,9 @@
 [submodule "vim-mru"]
 	path = vim/bundle/vim-mru
 	url = https://github.com/ornicar/vim-mru.git
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
