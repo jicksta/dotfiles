@@ -25,6 +25,10 @@ syntax on
 
 map <Leader>e :MRU<Enter>
 
+" Don't unselect text when changing indentation in visual mode.
+vmap > >gv
+vmap < <gv
+
 """ Gets rid of arrow keys but screws other stuff up I think.
 "noremap  <Up> ""
 "noremap!  <Up> <Esc>
