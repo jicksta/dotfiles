@@ -1,3 +1,8 @@
 * Change this repo to use submodules
 * Create a keybinding to globally toggle between using the arrow keys and not.
 * Get auto-completion and better realtime syntax checking setup
+
+VIM Management Tab
+------------------
+<Leader>vim opens a new vim tab with my .vimrc and my vim cheatsheet open with a vertical split.
+

@@ -29,11 +29,12 @@ filetype plugin on
 
 syntax on
 
-map <Leader>e :MRU<Enter>
+map <Leader>e :MRU<Enter> " TODO: If first entry in MRU buffer is the current file, hit`` "j" to select the item before it. (a la RubyMine)
 if bufwinnr(1)
-  map + <C-w>+
-  map = <C-w>+
-  map - <C-w>-
+  map - 2<C-w>-
+  map = 2<C-w>+   " Think +
+  map + <C-w>+    " Think <Shift>+
+  map _ <C-w>-    " Think <Shift>-
 endif
 
 " Don't unselect text when changing indentation in visual mode.
