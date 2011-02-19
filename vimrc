@@ -42,8 +42,8 @@ imap <C-l> <Space>=><Space>
 """"""" FOLDING CRAP  """"""
 """"""""""""""""""""""""""""
 
-set foldcolumn=1
-set foldmethod=syntax
-set foldlevelstart=20
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
+" set foldcolumn=1
+" set foldmethod=syntax
+" set foldlevelstart=20
+" nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
 
