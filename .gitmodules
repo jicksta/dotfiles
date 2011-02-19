@@ -43,3 +43,6 @@
 [submodule "vim/bundle/vim-rspec"]
 	path = vim/bundle/vim-rspec
 	url = https://github.com/taq/vim-rspec.git
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/geekq/ack.vim.git
