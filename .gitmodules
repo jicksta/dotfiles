@@ -46,3 +46,6 @@
 [submodule "vim/bundle/ack"]
 	path = vim/bundle/ack
 	url = https://github.com/geekq/ack.vim.git
+[submodule "z"]
+	path = z
+	url = https://github.com/rupa/z.git

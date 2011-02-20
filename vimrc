@@ -18,7 +18,7 @@ set backspace=2
 set autoindent
 
 :imap jj <Esc> " When leaving insert mode, the cursor goes one to the left. k makes it go back
-:imap jJ <Esc> " Common type: sometimes my first normal mode command needs shift
+:imap jJ <Esc> " Mapping jJ too since my first normal mode command sometimes uses shift
 
 vnoremap <Space> zf
 
