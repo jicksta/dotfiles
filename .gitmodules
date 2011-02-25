@@ -49,3 +49,6 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z.git
+[submodule "vim/bundle/vim-endwise"]
+	path = vim/bundle/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
