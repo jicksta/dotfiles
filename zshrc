@@ -11,7 +11,7 @@ bindkey '\e[2~' overwrite-mode
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 alias ls="ls -G"
-export GIT_EDITOR="vim -u NONE"
+export GIT_EDITOR="vim -u NONE -c 'syntax on' -N"
 
 alias vimstuff="cd ~/code/vimstuff"
 alias ov="cd ~/ourvirtues"
