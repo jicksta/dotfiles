@@ -11,4 +11,8 @@ class Dotfiles < Thor
     raise "TODO"
   end
 
+  desc "brew_install", "install the homebrew recipes I like"
+  def brew_install
+
+  end
 end
