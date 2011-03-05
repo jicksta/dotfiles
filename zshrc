@@ -11,17 +11,19 @@ bindkey '\e[2~' overwrite-mode
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 alias ls="ls -G"
-export GIT_EDITOR="vi -N -u NONE"
 
-alias dotfiles="cd ~/code/dotfiles"
-alias ov="cd ~/ourvirtues"
-alias sc="ripl rails"
-alias ss="rails s --debugger"
-export PATH=/usr/local/bin:$PATH
-
-export DOTFILES_DIR=~/code/dotfiles
-
-source $DOTFILES_DIR/z/z.sh
 function precmd() {
   z --add "$(pwd -P)"
 }
+
+export GIT_EDITOR="vim -u NONE -c 'syntax on' -N"
+
+export DOTFILES_DIR=~/code/dotfiles
+source $DOTFILES_DIR/z/z.sh
+
+alias ov="cd ~/ourvirtues"
+alias sc="ripl rails"
+alias ss="rails s --debugger"
+alias dotfiles="cd $DOTFILES_DIR"
+export PATH=/usr/local/bin:$PATH
+

@@ -1,6 +1,5 @@
-* Change this repo to use submodules
-* Create a keybinding to globally toggle between using the arrow keys and not.
-* Get auto-completion and better realtime syntax checking setup
+* nmap "A" to a function that checks if the current line has no text, if so insert the cursor where it should be (according to ==)
+* How can auto-completion and realtime syntax checking be setup?
 
 VIM Management Tab
 ------------------
