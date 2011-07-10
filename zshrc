@@ -15,8 +15,8 @@ export GIT_EDITOR="vim -u NONE -c 'syntax on' -N"
 
 alias vimstuff="cd ~/code/vimstuff"
 alias ov="cd ~/ourvirtues"
-alias sc="ripl rails"
-alias ss="rails s --debugger"
-#alias vim="vim -N"
+alias sc="((type ripl >&-) && ripl rails) || bundle exec rails console --debugger"
+alias ss="bundle exec rails s"
+
 export PATH=/usr/local/bin:$PATH
 
