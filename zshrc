@@ -63,11 +63,15 @@ source $DOTFILES_DIR/z/z.sh
 
 alias b="bundle"
 alias ov="cd ~/ourvirtues"
+
 alias vd="cd ~/code/vegan_data"
 alias ch="cd ~/code/minerva"
 alias sc="ripl rails"
 alias ss="rails s --debugger"
 alias dt="cd ~/Desktop"
 alias df="cd $DOTFILES_DIR"
+
+alias sc="((type ripl >&-) && ripl rails) || bundle exec rails console"
+alias ss="bundle exec rails s"
 
 export PATH=/usr/local/bin:$PATH
