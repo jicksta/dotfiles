@@ -17,8 +17,10 @@ set tabstop=2 shiftwidth=2 softtabstop=2
 set backspace=2
 set autoindent
 
-:imap jj <Esc> " When leaving insert mode, the cursor goes one to the left. k makes it go back
-:imap jJ <Esc> " Mapping jJ too since my first normal mode command sometimes uses shift
+" :imap jj <Esc> " When leaving insert mode, the cursor goes one to the left. k makes it go back
+" :imap jJ <Esc> " Mapping jJ too since my first normal mode command sometimes uses shift
+
+map <Leader>n :NERDTree<Enter>
 
 vnoremap <Space> zf
 
