@@ -1,5 +1,7 @@
 export DOTFILES_DIR=~/code/dotfiles
 
+autoload -U colors && colors
+
 export PS1="%{$fg[yellow]%}%~ %{$fg[white]%}%%%  "
 bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
@@ -17,6 +19,8 @@ function precmd() {
 export GIT_EDITOR="vim -u NONE -c 'syntax on' -N"
 
 source $DOTFILES_DIR/z/z.sh
+
+alias ls="ls -G"
 
 alias b="bundle"
 alias ov="cd ~/ourvirtues"
