@@ -70,8 +70,15 @@ alias sc="ripl rails"
 alias ss="rails s --debugger"
 alias dt="cd ~/Desktop"
 alias df="cd $DOTFILES_DIR"
+alias ne="cd ~/code/notesequipment"
 
 alias sc="((type ripl >&-) && ripl rails) || bundle exec rails console"
 alias ss="bundle exec rails s"
 
+alias push="git push && git push heroku"
+
 export PATH=/usr/local/bin:$PATH
+
+export EVERNOTE_OAUTH_CONSUMER_KEY="jicksta-8227"
+export EVERNOTE_OAUTH_CONSUMER_SECRET="95d3c4a2770c40e8"
+
