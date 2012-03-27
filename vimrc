@@ -1,7 +1,7 @@
 call pathogen#runtime_append_all_bundles() 
 call pathogen#helptags()
 
-colorscheme vividchalk
+colorscheme shine
 
 set nocompatible
 set number
@@ -36,7 +36,6 @@ if bufwinnr(1)
   map _ 2<C-w>-    " Think <Shift>-
 endif
 
-
 " bind control-l to hashrocket
 imap <C-l> <Space>=><Space>
 
@@ -49,3 +48,5 @@ imap <C-l> <Space>=><Space>
 " set foldlevelstart=20
 " nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
 
+" Fold the section matching the line's last curly brace, paren, etc
+map <Leader>f $zf%
