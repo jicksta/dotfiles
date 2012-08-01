@@ -34,6 +34,3 @@ alias push="git push && git push heroku"
 
 export PATH=/usr/local/bin:$PATH
 
-export EVERNOTE_OAUTH_CONSUMER_KEY="jicksta-8227"
-export EVERNOTE_OAUTH_CONSUMER_SECRET="95d3c4a2770c40e8"
-
