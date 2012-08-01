@@ -12,13 +12,7 @@ bindkey '\e[2~' overwrite-mode
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-function precmd() {
-  z --add "$(pwd -P)"
-}
-
 export GIT_EDITOR="vim -u NONE -c 'syntax on' -N"
-
-source $DOTFILES_DIR/z/z.sh
 
 alias ls="ls -G"
 
