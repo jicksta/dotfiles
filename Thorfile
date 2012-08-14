@@ -2,21 +2,17 @@ class Dotfiles < Thor
   
   MAPPINGS = {
     "zshrc" => "~/.zshrc",
+    "gemrc" => "~/.gemrc",
     "vimrc" => "~/.vimrc",
-    "vim" => "~/.vim"
+    "vim" => "~/.vim",
+    "gitconfig" => "~/.gitconfig"
   }
   
   desc "symlink", "create symlinks in $HOME"
   method_options :force => :boolean
   def symlink
-    Dotfiles.color = "black"
     MAPPINGS.each do |(src, destination)|
-      if File.exist? destination
-        puts "symlink %10s => %s" % [src, destination]
-        create_symlink src, destination
-      else
-        puts "symlink %10s => %s (EXISTS!)" % [src, destination]
-      end
+      create_symlink src, destination
     end
   end
 
@@ -37,7 +33,17 @@ class Dotfiles < Thor
 
   private
 
-  def create_symlink
+  def create_symlink(src, destination)
+    src = File.expand_path(src)
+    destination = File.expand_path(destination)
 
+    abort "Cannot find file #{src}" if !File.exist?(src) 
+
+    if File.exist?(destination)
+      STDERR.puts "Destination already exists! Skipping. #{destination}"
+    else
+      system "ln -s #{src} #{destination}"
+      puts "symlink %10s => %s" % [src, destination]
+    end
   end
 end
