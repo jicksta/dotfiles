@@ -2,3 +2,8 @@
   ci = commit
   co = checkout
   st = status
+[user]
+	name = Jay Phillips
+	email = jicksta+git@gmail.com
+[color]
+	ui = true
