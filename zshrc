@@ -22,5 +22,21 @@ alias be="bundle exec"
 alias rs="bundle exec rails s"
 alias rc="bundle exec rails c"
 
+
+export MARKPATH=$HOME/.marks
+function j { 
+  cd -P "$MARKPATH/$1" 2>/dev/null || echo "No such mark: $1"
+}
+function mark { 
+  mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1"
+}
+function unmark { 
+  rm -i "$MARKPATH/$1"
+}
+function marks {
+  ls -l $MARKPATH | tail -n +2 | sed 's/  / /g' | cut -d' ' -f9- | awk -F ' -> ' '{printf "%-10s -> %s\n", $1, $2}'
+}
+
+
 [[ -f "$HOME/.zsh_local" ]] && source "$HOME/.zsh_local"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

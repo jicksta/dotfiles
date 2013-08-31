@@ -5,7 +5,8 @@ class Dotfiles < Thor
     "gemrc" => "~/.gemrc",
     "vimrc" => "~/.vimrc",
     "vim" => "~/.vim",
-    "gitconfig" => "~/.gitconfig"
+    "gitconfig" => "~/.gitconfig",
+    "marks" => "~/.marks"
   }
   
   desc "symlink", "create symlinks in $HOME"

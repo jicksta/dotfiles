@@ -7,3 +7,5 @@
 	email = jay@tradehill.com
 [color]
 	ui = true
+[push]
+	default = simple
