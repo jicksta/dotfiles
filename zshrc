@@ -5,7 +5,9 @@ export PATH=/usr/local/bin:$PATH:/usr/local/sbin
 #export PS1="%{$fg[green]%}%~ %{$fg[black]%}%%%  "
 export PS1="%{$fg[green]%}%~ %{$fg[white]%}%%%  "
 
-export GIT_EDITOR="vim -u NONE -c 'syntax on' -N"
+export EDITOR="vim -u NONE -c 'syntax on' -N"
+export GIT_EDITOR=$EDITOR
+
 export DOTFILES_DIR=~/code/dotfiles
 
 bindkey    "^[[3~"          delete-char
@@ -15,6 +17,8 @@ bindkey '\e[1~' beginning-of-line
 bindkey '\e[4~' end-of-line
 bindkey '\e[2~' overwrite-mode
 
+alias find="noglob find"
+
 alias l="ls -GAChl"
 alias ls="ls -G"
 alias b="bundle"
@@ -22,6 +26,9 @@ alias be="bundle exec"
 alias rs="bundle exec rails s"
 alias rc="bundle exec rails c"
 
+function serve {
+  (cd ${2:=.} && python -m SimpleHTTPServer ${1:=5000})
+}
 
 export MARKPATH=$HOME/.marks
 function j { 
