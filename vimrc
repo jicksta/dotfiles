@@ -30,6 +30,8 @@ filetype plugin on
 
 syntax on
 
+au BufRead,BufNewFile *.go set filetype=go
+
 map <Leader>e :MRU<Enter> " TODO: If first entry in MRU buffer is the current file, hit`` "j" to select the item before it. (a la RubyMine)
 if bufwinnr(1)
   map + 2<C-w>+    " Think <Shift>+
