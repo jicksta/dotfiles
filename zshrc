@@ -8,13 +8,17 @@ export PS1="%{$fg[green]%}%~ %{$fg[white]%}%%%  "
 export EDITOR="vim -u NONE -c 'syntax on' -N"
 export GIT_EDITOR=$EDITOR
 
+export GOPATH=~/.gopath
+
 export DOTFILES_DIR=~/code/dotfiles
 
 bindkey    "^[[3~"          delete-char
 bindkey    "^[3;5~"         delete-char
 
 bindkey '\e[1~' beginning-of-line
+bindkey '^A' beginning-of-line
 bindkey '\e[4~' end-of-line
+bindkey '^E' end-of-line
 bindkey '\e[2~' overwrite-mode
 
 alias find="noglob find"
@@ -47,3 +51,8 @@ function marks {
 
 [[ -f "$HOME/.zsh_local" ]] && source "$HOME/.zsh_local"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
