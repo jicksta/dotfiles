@@ -1,4 +1,0 @@
-* Need to move the bash-compatible things from zshrc to bashrc
-* Don't require z/z.sh to be symlinked anywhere. bashrc should find its real location reliably and source it there.
-* What's the best way to manage 
-* Look at others dotfiles and see what I can steal for great justice.

@@ -1,7 +1,0 @@
-* nmap "A" to a function that checks if the current line has no text, if so insert the cursor where it should be (according to ==)
-* How can auto-completion and realtime syntax checking be setup?
-
-VIM Management Tab
-------------------
-<Leader>vim opens a new vim tab with my .vimrc and my vim cheatsheet open with a vertical split.
-
