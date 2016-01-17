@@ -1,35 +1,28 @@
 class Dotfiles < Thor
   
+  DEFAULT_SYMLINK_DIR = "~"
+
   MAPPINGS = {
-    "zshrc" => "~/.zshrc",
-    "gemrc" => "~/.gemrc",
-    "vimrc" => "~/.vimrc",
-    "vim" => "~/.vim",
-    "gitconfig" => "~/.gitconfig",
-    "marks" => "~/.marks"
+    "zshrc" => ".zshrc",
+    "zsh" => ".zsh",
+    "gemrc" => ".gemrc",
+    "vimrc" => ".vimrc",
+    "vim" => ".vim",
+    "gitconfig" => ".gitconfig",
   }
   
   desc "symlink", "create symlinks in $HOME"
-  method_options :force => :boolean
+  option :in, type: :string, default: DEFAULT_SYMLINK_DIR
   def symlink
-    MAPPINGS.each do |(src, destination)|
+    MAPPINGS.each do |(src, name)|
+      destination = File.join(options[:in], name)
       create_symlink src, destination
     end
   end
 
-  desc "update", "update all git submodules"
-  def update
-    raise "TODO"
-  end
-
-  desc "brew_install", "install the homebrew recipes I like"
-  def brew_install
-    raise "TODO"
-  end
-
-  desc "check", "Do a sanity check of the environment"
-  def check
-    raise "TODO"
+  desc "brew", "install the homebrew recipes I like"
+  def brew
+    system "brew tap homebrew/bundle && brew bundle"
   end
 
   private
@@ -47,4 +40,5 @@ class Dotfiles < Thor
       puts "symlink %10s => %s" % [src, destination]
     end
   end
+
 end
