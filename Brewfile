@@ -1,0 +1,2 @@
+brew "openssl"
+brew "phantomjs"
