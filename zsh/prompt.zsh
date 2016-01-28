@@ -1,11 +1,12 @@
 bindkey -e
 bindkey '\e[3~' delete-char
 
-autoload -U colors && colors
-#autoload predict-on && predict-on
-
 zmodload zsh/complist
+
 autoload -U compinit && compinit
+autoload -U colors && colors
+
+export PS1="%{$fg[green]%}%~ %{$fg[white]%}%%%  "
 
 zstyle ':completion:::::' completer _complete _approximate
 
@@ -20,15 +21,3 @@ zstyle ':completion:*' verbose yes
 
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX + $#SUFFIX) / 3 )) )'
 zstyle ':completion::approximate*:*' prefix-needed false
-
-########################################################
-
-export PS1="%{$fg[green]%}%~ %{$fg[white]%}%%%  "
-
-########################################################
-
-#antigen theme bhilburn/powerlevel9k powerlevel9k
-#antigen apply
-
-
-
