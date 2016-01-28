@@ -1,4 +1,6 @@
 bindkey -e
+bindkey '\e[3~' delete-char
+
 autoload -U colors && colors
 #autoload predict-on && predict-on
 
