@@ -1,4 +1,4 @@
-
+bindkey -e
 autoload -U colors && colors
 #autoload predict-on && predict-on
 
