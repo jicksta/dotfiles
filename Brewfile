@@ -30,6 +30,7 @@ brew "watchman"
 brew "graphviz"
 brew "imagemagick"
 brew "osxfuse"
+brew "reattach-to-user-namespace" # for tmux
 
 # Databases
 brew "sqlite"

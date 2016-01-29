@@ -9,6 +9,7 @@ class Dotfiles < Thor
     "vimrc" => ".vimrc",
     "vim" => ".vim",
     "gitconfig" => ".gitconfig",
+    "tmux" => ".tmux.conf",
   }
   
   desc "symlink", "create symlinks in $HOME"
