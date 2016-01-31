@@ -51,6 +51,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'ap/vim-css-color'
 
 " Misc Languages
+Plugin 'elmcast/elm-vim'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'wting/rust.vim'
 Plugin 'hdima/python-syntax'
