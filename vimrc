@@ -5,38 +5,56 @@ set rtp+=~/.vim/bundle/Vundle.vim
 	call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
+
+" General Editing
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
-Plugin 'flazz/vim-colorschemes'
 Plugin 'bronson/vim-trailing-whitespace'
-Plugin 'ap/vim-css-color'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'VimClojure'
-Plugin 'kien/rainbow_parentheses.vim'
+
+" Appearance
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Git
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-git'
+
+" Ruby
 Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-bundler'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'elzr/vim-json'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'chrisbra/csv.vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'wting/rust.vim'
-Plugin 'burnettk/vim-angular'
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-markdown'
-Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-git'
+
+" JavaScript
+Plugin 'elzr/vim-json'
+Plugin 'pangloss/vim-javascript'
+Plugin 'burnettk/vim-angular'
+Plugin 'mxw/vim-jsx'
+
+" Clojure
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'tpope/vim-fireplace'
+
+" Misc Web Development
+Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'ap/vim-css-color'
+
+" Misc Languages
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'wting/rust.vim'
 Plugin 'hdima/python-syntax'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'chrisbra/csv.vim'
 
 	call vundle#end()
 
