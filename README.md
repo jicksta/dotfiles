@@ -1,5 +1,5 @@
-jicksta/dotfiles
-================
+jicksta / dotfiles
+==================
 
 These dotfiles assume you already have Ruby and Homebrew installed.
 
@@ -12,20 +12,22 @@ Steps for setting up a new machine:
   * `thor dotfiles:symlink`
 
 Since you aren't me, you should fork this repo and edit the `[user]` section
-in `gitconfig`.
+in `gitconfig` and make whatever other customizations you want.
 
 Setting up iTerm 2
 ------------------
 
-Install the fonts in `iterm2/powerline-fonts` to your system: 
+Install the fonts in `iterm2/powerline-fonts` to your system.
 
-Install the iTerm2 color schemes in `iterm2/color-schemes` through `Import..." in `Preferences` > `Profiles` > `Colors` > `Load Presets...`
+Install the iTerm2 color schemes in `iterm2/color-schemes` through `Import...` in `Preferences` > `Profiles` > `Colors` > `Load Presets...`
+
+Load the `iterm2/settings` preferences folder in iTerm2: `Preferences` > `General` > `Load preferences from a custom folder or URL:`
 
 Other Environment Necessities
 -----------------------------
 
+ * Xcode (Mac App Store)
  * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
- * Xcode
 
 Essential Mac Applications
 --------------------------
