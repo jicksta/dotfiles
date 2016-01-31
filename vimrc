@@ -78,6 +78,7 @@ set incsearch
 
 set laststatus=2
 
+colorscheme solarized
 
 syntax on
 
