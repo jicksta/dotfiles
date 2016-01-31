@@ -3,6 +3,7 @@ antigen bundle git
 antigen bundle kennethreitz/autoenv
 antigen bundle lein
 antigen bundle command-not-found
+antigen-bundle Tarrasch/zsh-autoenv
 
 antigen use oh-my-zsh
 
