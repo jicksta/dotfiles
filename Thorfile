@@ -9,6 +9,7 @@ class Dotfiles < Thor
     "vimrc" => ".vimrc",
     "vim" => ".vim",
     "gitconfig" => ".gitconfig",
+    "gitexcludes" => ".gitexcludes",
     "tmux" => ".tmux.conf",
   }
   
