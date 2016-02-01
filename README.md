@@ -11,8 +11,12 @@ Steps for setting up a new machine:
   * `bundle install`
   * `thor dotfiles:symlink`
 
-Since you aren't me, you should fork this repo and edit the `[user]` section
-in `gitconfig` and make whatever other customizations you want.
+The Thor task will symlink the config files and folders to their respective locations in `~`.
+It gracefully skips any files that already exist. If it skipped over a file you wanted it to
+replace, simply `rm` or `mv` the unwanted file away and re-run `thor dotfiles:symlink`.
+
+Since you aren't me, you should fork this repo and edit the `[user]` section in
+`gitconfig` and make whatever other customizations you want.
 
 Setting up iTerm 2
 ------------------

@@ -17,8 +17,7 @@ Plugin 'tpope/vim-endwise'
 
 " Appearance
 Plugin 'flazz/vim-colorschemes'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'itchyny/lightline.vim'
 
 " Git
 Plugin 'airblade/vim-gitgutter'
@@ -69,14 +68,14 @@ set tabstop=2 shiftwidth=2 softtabstop=2
 set backspace=2
 set autoindent
 
+set laststatus=2
+
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set hidden
 set hlsearch
 set incsearch
-
-set laststatus=2
 
 colorscheme solarized
 
@@ -94,9 +93,13 @@ au Syntax * RainbowParenthesesLoadBraces
 
 
 let g:gitgutter_enabled = 1
+let g:gitgutter_override_sign_column_highlight = 0
+let g:gitgutter_sign_column_always = 1
+let g:gitgutter_highlight_lines = 1
 
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+let g:lightline = {
+      \ 'colorscheme': 'solarized_light',
+      \ }
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
