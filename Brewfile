@@ -23,6 +23,7 @@ brew "htop-osx"
 brew "netcat"
 brew "nmap"
 brew "wget"
+brew "watch"
 
 # Development dependencies
 brew "phantomjs"
