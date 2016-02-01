@@ -6,8 +6,9 @@ These dotfiles assume you already have Ruby and Homebrew installed.
 Steps for setting up a new machine:
 
   * `git submodule update --init`
+  * `brew update`
   * `brew tap Homebrew/bundle`
-  * `brew bundle`
+  * `brew bundle --verbose`
   * `bundle install`
   * `thor dotfiles:symlink`
 
