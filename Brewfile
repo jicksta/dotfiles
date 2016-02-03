@@ -1,7 +1,7 @@
 ###############################################################################
 # HOW TO USE THIS FILE:
 #   Install homebrew-bundle with `brew tap Homebrew/bundle`
-#   Simply run `brew bundle -v` where the Brewfile is located.
+#   then `brew bundle --verbose` where the Brewfile is located.
 ###############################################################################
 
 tap "neovim/neovim"
@@ -30,6 +30,7 @@ brew "watchman"
 brew "graphviz"
 brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
+brew "heroku"
 
 # Databases
 brew "sqlite"
@@ -53,3 +54,4 @@ brew "openssh"
 brew "libsodium"
 brew "ethereum"
 brew "keybase"
+
