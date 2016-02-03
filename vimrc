@@ -51,7 +51,7 @@ Plugin 'ap/vim-css-color'
 
 " Misc Languages
 Plugin 'elmcast/elm-vim'
-Plugin 'jnwhiteh/vim-golang'
+Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'chrisbra/csv.vim'
