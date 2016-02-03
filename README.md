@@ -69,6 +69,7 @@ Essential Mac Applications
  * OpenSCAD
  * Popcorn-Time
  * RimWorld
+ * [Ring](https://ring.cx/)
  * Seil
  * Simple Comic
  * SizeUp
