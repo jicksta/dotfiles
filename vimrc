@@ -77,6 +77,9 @@ set hidden
 set hlsearch
 set incsearch
 
+"set guifont="Roboto Mono for Powerline:h15"
+set guifont=Menlo:h15
+
 colorscheme solarized
 
 syntax on
@@ -84,7 +87,6 @@ syntax on
 noremap <Leader>t :CtrlP<CR>
 noremap <Leader>e :CtrlPMRU<CR>
 noremap <Leader>n :NERDTree<CR>
-
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
