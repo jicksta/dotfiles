@@ -36,6 +36,7 @@ brew "heroku"
 brew "sqlite"
 brew "postgresql"
 brew "leveldb"
+brew "neo4j"
 
 # Languages
 brew "node"
