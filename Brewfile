@@ -47,12 +47,13 @@ brew "python"
 
 # Editors
 brew "emacs"
+brew "macvim"
 brew "neovim"
 
 # Crypto
 brew "openssl"
-brew "openssh"
 brew "libsodium"
-brew "ethereum"
 brew "keybase"
+#brew "openssh" # Package removed?
+#brew "ethereum" # Package removed?
 
