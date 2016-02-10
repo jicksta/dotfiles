@@ -95,7 +95,7 @@ au Syntax * RainbowParenthesesLoadBraces
 let g:gitgutter_enabled = 1
 let g:gitgutter_override_sign_column_highlight = 0
 let g:gitgutter_sign_column_always = 1
-let g:gitgutter_highlight_lines = 1
+"let g:gitgutter_highlight_lines = 1
 
 let g:lightline = {
       \ 'colorscheme': 'solarized_light',
