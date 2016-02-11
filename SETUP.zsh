@@ -1,7 +1,8 @@
 #!/bin/zsh
 
-# TODO: Replace the Thorfile with commands here
+# TODO: Replace my Thorfile with equivalent zsh commands
 
+brew update
 brew tap Homebrew/bundle
 brew bundle --verbose
 

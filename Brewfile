@@ -25,6 +25,7 @@ brew "wget"
 brew "watch"
 
 # Development dependencies
+brew "ruby-build"
 brew "phantomjs"
 brew "watchman"
 brew "graphviz"
