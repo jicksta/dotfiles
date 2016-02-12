@@ -46,6 +46,7 @@ brew "rust"
 brew "go"
 brew "leiningen" # Clojure
 brew "python"
+brew "scala"
 
 # Editors
 brew "emacs"
