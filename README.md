@@ -39,6 +39,7 @@ Essential Mac Applications
 
  * 1Password
  * Amazon Kindle.app
+ * [Anaconda](https://www.continuum.io/downloads)
  * Atom
  * Balsamiq Mockups
  * Caffeine.app
