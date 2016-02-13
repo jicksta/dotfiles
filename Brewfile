@@ -34,11 +34,13 @@ brew "reattach-to-user-namespace" # for tmux
 brew "heroku"
 
 # Databases
-brew "sqlite"
 brew "postgresql"
-brew "leveldb"
+brew "sqlite"
 brew "neo4j"
+brew "orientdb"
+brew "leveldb"
 brew "influxdb"
+brew "gnatsd"
 
 # Languages
 brew "node"
