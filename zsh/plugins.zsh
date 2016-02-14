@@ -1,3 +1,5 @@
+[[ -f "$HOME/.rbenv/completions/rbenv.zsh" ]] && source "$HOME/.rbenv/completions/rbenv.zsh"
+
 antigen bundle robbyrussell/oh-my-zsh plugins/ruby
 antigen bundle git
 antigen bundle kennethreitz/autoenv
@@ -10,6 +12,7 @@ antigen use oh-my-zsh
 antigen theme bhilburn/powerlevel9k powerlevel9k
 #antigen theme robbyrussell
 #antigen theme agnoster
+
 
 ### More themes: https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 

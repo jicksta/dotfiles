@@ -26,6 +26,7 @@ brew "watch"
 
 # Development dependencies
 brew "ruby-build"
+brew "qt5" # for capybara-webkit
 brew "phantomjs"
 brew "watchman"
 brew "graphviz"
@@ -43,6 +44,7 @@ brew "influxdb"
 brew "gnatsd"
 
 # Languages
+brew "rbenv"
 brew "node"
 brew "rust"
 brew "go"

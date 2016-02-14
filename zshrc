@@ -6,4 +6,7 @@ source $HOME/.zsh/paths.zsh
 source $HOME/.zsh/prompt.zsh
 source $HOME/.zsh/plugins.zsh
 
+eval "$(rbenv init -)"
+
 [[ -f "$HOME/.zsh_local" ]] && source "$HOME/.zsh_local"
+
