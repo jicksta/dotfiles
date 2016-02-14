@@ -1,5 +1,6 @@
 alias l="ls -GAChl"
 alias ls="ls -G"
+alias py="python -q"
 alias b="bundle"
 alias be="bundle exec"
 alias em="ember"

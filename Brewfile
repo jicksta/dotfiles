@@ -6,6 +6,10 @@
 
 tap "neovim/neovim"
 
+# Applications
+brew "syncthing"
+brew "graphviz"
+
 # Shell utilities
 brew "zsh"
 brew "tmux"
@@ -29,7 +33,6 @@ brew "ruby-build"
 brew "qt5" # for capybara-webkit
 brew "phantomjs"
 brew "watchman"
-brew "graphviz"
 brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
 brew "heroku"

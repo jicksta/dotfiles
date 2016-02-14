@@ -34,6 +34,8 @@ Other Environment Necessities
  * Xcode (Mac App Store)
  * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
 
+Run `brew bundle` occassionally to keep the homebrew packages up-to-date.
+
 Essential Mac Applications
 --------------------------
 
