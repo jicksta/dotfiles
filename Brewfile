@@ -5,6 +5,7 @@
 ###############################################################################
 
 tap "neovim/neovim"
+tap "homebrew/science"
 
 # Applications
 brew "syncthing"
@@ -21,12 +22,13 @@ brew "midnight-commander"
 brew "unrar"
 brew "p7zip"
 brew "ack"
-brew "jsonpp"
+brew "jq"
 brew "htop-osx"
 brew "netcat"
 brew "nmap"
 brew "wget"
 brew "watch"
+brew "protobuf"
 
 # Development dependencies
 brew "ruby-build"
@@ -54,6 +56,7 @@ brew "go"
 brew "leiningen" # Clojure
 brew "python"
 brew "scala"
+brew "R"
 
 # Editors
 brew "emacs"
