@@ -2,6 +2,7 @@
 
 # TODO: Replace my Thorfile with equivalent zsh commands
 
+brew doctor
 brew update
 brew tap Homebrew/bundle
 brew bundle --verbose
