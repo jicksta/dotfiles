@@ -22,6 +22,8 @@ Plugin 'itchyny/lightline.vim'
 " Git
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-git'
+Plugin 'gregsexton/gitv'
+"Plugin 'tpope/vim-fugitive'
 
 " Ruby
 Plugin 'tpope/vim-rails'
