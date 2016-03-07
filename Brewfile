@@ -29,6 +29,8 @@ brew "nmap"
 brew "wget"
 brew "watch"
 brew "protobuf"
+brew "awscli"
+brew "tesseract"
 
 # Development dependencies
 brew "ruby-build"
@@ -47,6 +49,7 @@ brew "orientdb"
 brew "leveldb"
 brew "influxdb"
 brew "gnatsd"
+brew "apache-spark"
 
 # Languages
 brew "rbenv"

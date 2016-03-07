@@ -10,7 +10,7 @@ brew bundle --verbose
 bundle install
 thor dotfiles:symlink
 
-npm install -g ember-cli bower diff-so-fancy gitbook
+npm install -g ember-cli bower diff-so-fancy gitbook-cli
 
 vim +PluginInstall +qall
 
