@@ -3,6 +3,7 @@ source $HOME/.zsh/editors.zsh
 source $HOME/.zsh/aliases.zsh
 source $HOME/.zsh/macosx.zsh
 source $HOME/.zsh/paths.zsh
+source $HOME/.zsh/classpath.zsh
 source $HOME/.zsh/prompt.zsh
 source $HOME/.zsh/plugins.zsh
 source $HOME/.zsh/functions.zsh

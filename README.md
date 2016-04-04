@@ -56,6 +56,7 @@ Essential Mac Applications
  * Gephi
  * GitBook Editor
  * Google Chrome
+ * Google Earth
  * Graphviz
  * iTerm 2
  * Jitsi

@@ -23,6 +23,7 @@ brew "unrar"
 brew "p7zip"
 brew "ack"
 brew "jq"
+brew "jsonpp"
 brew "htop-osx"
 brew "netcat"
 brew "nmap"
@@ -58,8 +59,9 @@ brew "rust"
 brew "go"
 brew "leiningen" # Clojure
 brew "python"
-brew "scala"
 brew "R"
+brew "scala"
+brew "sbt" # Also Scala
 
 # Editors
 brew "emacs"

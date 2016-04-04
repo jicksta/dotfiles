@@ -10,6 +10,8 @@ alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
 
+alias serve="python -m SimpleHTTPServer 1234"
+
 function dme() {
   eval "$(docker-machine env $1)"
 }

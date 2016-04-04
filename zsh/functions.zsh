@@ -49,3 +49,8 @@ CreateSymlink() {
   # ln -s $SOURCE $DEST
   echo symlink $SOURCE => $DEST
 }
+
+
+Serve() {
+  python -m SimpleHTTPServer
+}
