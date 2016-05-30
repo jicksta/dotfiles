@@ -13,12 +13,14 @@ brew "graphviz"
 
 # Shell utilities
 brew "zsh"
+brew "tree"
 brew "tmux"
 brew "git"
 brew "tig"
 brew "git-flow"
 brew "coreutils" # Adds `realpath` and other commands
 brew "midnight-commander"
+brew "unar"
 brew "unrar"
 brew "p7zip"
 brew "ack"
@@ -27,6 +29,7 @@ brew "jsonpp"
 brew "htop-osx"
 brew "netcat"
 brew "nmap"
+brew "ngrep"
 brew "wget"
 brew "watch"
 brew "protobuf"
@@ -49,8 +52,12 @@ brew "neo4j"
 brew "orientdb"
 brew "leveldb"
 brew "influxdb"
-brew "gnatsd"
+brew "ipfs"
+
+# Cluster stuff
 brew "apache-spark"
+brew "kafka"
+brew "kubernetes-cli"
 
 # Languages
 brew "rbenv"
