@@ -35,6 +35,7 @@ brew "watch"
 brew "protobuf"
 brew "awscli"
 brew "tesseract"
+brew "libsass"
 
 # Development dependencies
 brew "ruby-build"
@@ -69,6 +70,7 @@ brew "python"
 brew "R"
 brew "scala"
 brew "sbt" # Also Scala
+brew "thrift"
 
 # Editors
 brew "emacs"
