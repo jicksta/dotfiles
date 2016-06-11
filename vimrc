@@ -82,7 +82,7 @@ set incsearch
 "set guifont="Roboto Mono for Powerline:h15"
 set guifont=Menlo:h15
 
-colorscheme solarized
+colorscheme default
 
 syntax on
 

@@ -1,14 +1,13 @@
-source $HOME/.zsh/antigen.zsh
-source $HOME/.zsh/editors.zsh
-source $HOME/.zsh/aliases.zsh
-source $HOME/.zsh/macosx.zsh
-source $HOME/.zsh/paths.zsh
-source $HOME/.zsh/classpath.zsh
-source $HOME/.zsh/prompt.zsh
-source $HOME/.zsh/plugins.zsh
-source $HOME/.zsh/functions.zsh
+export ZSHDIR="$HOME/.zsh"
 
-eval "$(rbenv init -)"
+source $ZSHDIR/antigen.zsh
+source $ZSHDIR/editors.zsh
+source $ZSHDIR/aliases.zsh
+source $ZSHDIR/macosx.zsh
+source $ZSHDIR/paths.zsh
+source $ZSHDIR/classpath.zsh
+source $ZSHDIR/prompt.zsh
+source $ZSHDIR/plugins.zsh
+source $ZSHDIR/functions.zsh
 
 [[ -f "$HOME/.zsh_local" ]] && source "$HOME/.zsh_local"
-
