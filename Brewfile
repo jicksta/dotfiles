@@ -6,6 +6,7 @@
 
 tap "neovim/neovim"
 tap "homebrew/science"
+tap "homebrew/versions"
 
 # Applications
 brew "syncthing"
@@ -36,10 +37,12 @@ brew "protobuf"
 brew "awscli"
 brew "tesseract"
 brew "libsass"
+brew "fswatch"
+brew "shellcheck" # for linter-shellcheck Atom plugin
 
 # Development dependencies
 brew "ruby-build"
-brew "qt5" # for capybara-webkit
+brew "qt55" # for capybara-webkit
 brew "phantomjs"
 brew "watchman"
 brew "imagemagick"
