@@ -5,21 +5,21 @@
 ###############################################################################
 
 tap "neovim/neovim"
-tap "homebrew/science"
 tap "homebrew/versions"
+tap "homebrew/science"
 
 # Applications
-brew "syncthing"
 brew "graphviz"
+#brew "syncthing"
 
 # Shell utilities
+brew "coreutils" # Adds `realpath` and other commands
 brew "zsh"
 brew "tree"
 brew "tmux"
 brew "git"
 brew "tig"
 brew "git-flow"
-brew "coreutils" # Adds `realpath` and other commands
 brew "midnight-commander"
 brew "unar"
 brew "unrar"
@@ -48,6 +48,7 @@ brew "watchman"
 brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
 brew "heroku"
+brew "typesafe-activator"
 
 # Databases
 brew "postgresql"
@@ -72,7 +73,7 @@ brew "leiningen" # Clojure
 brew "python"
 brew "R"
 brew "scala"
-brew "sbt" # Also Scala
+brew "sbt"
 brew "thrift"
 
 # Editors
