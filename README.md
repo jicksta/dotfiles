@@ -1,23 +1,13 @@
 jicksta / dotfiles
 ==================
 
-These dotfiles assume you already have Ruby and Homebrew installed.
+These dotfiles assume you're using ZSH and already have Ruby and Homebrew installed.
 
-Steps for setting up a new machine:
+    mkdir ~/code
+    git clone https://github.com/jicksta/dotfiles ~/code/dotfiles
+    ./SETUP.zsh
 
-  * `git submodule update --init`
-  * `brew update`
-  * `brew tap Homebrew/bundle`
-  * `brew bundle --verbose`
-  * `bundle install`
-  * `thor dotfiles:symlink`
-
-The Thor task will symlink the config files and folders to their respective locations in `~`.
-It gracefully skips any files that already exist. If it skipped over a file you wanted it to
-replace, simply `rm` or `mv` the unwanted file away and re-run `thor dotfiles:symlink`.
-
-Since you aren't me, you should fork this repo and edit the `[user]` section in
-`gitconfig` and make whatever other customizations you want.
+Since you aren't me, you should fork this repo and edit the `[user]` section in `gitconfig` and make whatever other customizations you want.
 
 Setting up iTerm 2
 ------------------
@@ -38,6 +28,8 @@ Run `brew bundle` occassionally to keep the homebrew packages up-to-date.
 
 Essential Mac Applications
 --------------------------
+
+These are my essential desktop applications.
 
  * 1Password
  * Amazon Kindle.app
