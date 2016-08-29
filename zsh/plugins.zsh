@@ -25,3 +25,10 @@ POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 
 
 antigen apply
+
+
+# For Lunchy, a gem for managing macOS daemons
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+  . $LUNCHY_DIR/lunchy-completion.zsh
+fi
