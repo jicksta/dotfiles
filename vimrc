@@ -57,6 +57,7 @@ Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'chrisbra/csv.vim'
+Plugin 'derekwyatt/vim-scala'
 
 	call vundle#end()
 
