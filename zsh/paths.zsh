@@ -1,6 +1,7 @@
-export PATH="$HOME/.rbenv/shims/:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="$PATH:$HOME/.zsh/bin"
 export PATH="$PATH:/usr/local/opt/go/libexec/bin"
+export PATH="/usr/local/sbin:$PATH" # For Homebrew
 
 export GOPATH="$HOME/code/gopath"
 
