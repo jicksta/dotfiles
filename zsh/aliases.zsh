@@ -3,6 +3,7 @@ alias l="ls -GAChl"
 alias ls="ls -G"
 alias t="tree -AC"
 alias shred="gshred" # some coreutils programs are prefixed with a "g"
+alias tmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
 
 # Git
 alias gc="git clone"
@@ -24,6 +25,9 @@ alias dm="docker-machine"
 function dme() {
   eval "$(docker-machine env $1)"
 }
+
+# Data analytics tools
+alias spark="spark-shell --master 'local[*]'"
 
 # Webdev Utils
 alias serve="python -m SimpleHTTPServer 1234"
