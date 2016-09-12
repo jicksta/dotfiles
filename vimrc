@@ -87,6 +87,8 @@ colorscheme default
 
 syntax on
 
+map <Leader>G :GitGutterToggle<CR>
+
 noremap <Leader>t :CtrlP<CR>
 noremap <Leader>e :CtrlPMRU<CR>
 noremap <Leader>n :NERDTree<CR>
