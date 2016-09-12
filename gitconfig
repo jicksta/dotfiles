@@ -2,6 +2,7 @@
   ci = commit
   co = checkout
   st = status
+  d = diff
 [user]
 	name = Jay Phillips
 	email = jicksta@gmail.com
