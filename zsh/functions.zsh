@@ -54,3 +54,14 @@ CreateSymlink() {
 Serve() {
   python -m SimpleHTTPServer
 }
+
+ShowHiddenFiles() {
+  defaults write com.apple.finder AppleShowAllFiles YES
+  killall Finder
+}
+
+HideHiddenFiles() {
+  defaults write com.apple.finder AppleShowAllFiles NO
+  killall Finder
+}
+
