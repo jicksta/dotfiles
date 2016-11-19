@@ -1,5 +1,7 @@
 [[ -f "$HOME/.rbenv/completions/rbenv.zsh" ]] && source "$HOME/.rbenv/completions/rbenv.zsh"
 
+unsetopt share_history
+
 antigen bundle robbyrussell/oh-my-zsh plugins/ruby
 antigen bundle git
 antigen bundle kennethreitz/autoenv
@@ -12,9 +14,9 @@ antigen use oh-my-zsh
 antigen theme bhilburn/powerlevel9k powerlevel9k
 #antigen theme robbyrussell
 #antigen theme agnoster
+## More themes: https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 
-
-### More themes: https://github.com/robbyrussell/oh-my-zsh/wiki/themes
+antigen apply
 
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
@@ -24,11 +26,11 @@ POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 
 
-antigen apply
-
 
 # For Lunchy, a gem for managing macOS daemons
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-  . $LUNCHY_DIR/lunchy-completion.zsh
+if (( $+commands[lunchy] )) ; then
+  LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+  if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+    . $LUNCHY_DIR/lunchy-completion.zsh
+  fi
 fi

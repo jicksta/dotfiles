@@ -11,7 +11,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
-Plugin 'bronson/vim-trailing-whitespace'
+"Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
 
@@ -58,6 +58,9 @@ Plugin 'wting/rust.vim'
 Plugin 'hdima/python-syntax'
 Plugin 'chrisbra/csv.vim'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'fatih/vim-hclfmt'
+
+Bundle 'solarnz/thrift.vim'
 
 	call vundle#end()
 

@@ -12,6 +12,10 @@ alias gc="git clone"
 alias b="bundle"
 alias be="bundle exec"
 alias py="python -q"
+alias p3="python3"
+
+# Yarn
+alias y="yarn"
 
 # Ember
 alias em="ember"

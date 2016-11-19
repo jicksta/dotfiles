@@ -7,10 +7,12 @@
 tap "neovim/neovim"
 tap "homebrew/versions"
 tap "homebrew/science"
+tap "homebrew/games"
 
 # Applications
 brew "graphviz"
 #brew "syncthing"
+brew "ckan" # KSP mod manager
 
 # Shell utilities
 brew "coreutils" # Adds `realpath` and other commands
@@ -49,6 +51,7 @@ brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
 brew "heroku"
 brew "typesafe-activator"
+brew "yarn"
 
 # Databases
 brew "postgresql"
@@ -63,6 +66,7 @@ brew "ipfs"
 brew "apache-spark"
 brew "kafka"
 brew "kubernetes-cli"
+brew "Caskroom/cask/minikube"
 
 # Languages
 brew "rbenv"
@@ -70,7 +74,7 @@ brew "node"
 brew "rust"
 brew "go"
 brew "leiningen" # Clojure
-brew "python"
+brew "python3"
 brew "R"
 brew "scala"
 brew "sbt"
