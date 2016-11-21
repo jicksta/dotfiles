@@ -12,6 +12,7 @@
   co = checkout
   st = status
   d = diff
+  r = rebase
 
 [user]
 	name = Jay Phillips
