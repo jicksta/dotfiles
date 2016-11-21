@@ -59,8 +59,7 @@ Plugin 'hdima/python-syntax'
 Plugin 'chrisbra/csv.vim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'fatih/vim-hclfmt'
-
-Bundle 'solarnz/thrift.vim'
+Plugin 'solarnz/thrift.vim'
 
 	call vundle#end()
 
