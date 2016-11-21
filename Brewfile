@@ -44,7 +44,6 @@ brew "shellcheck" # for linter-shellcheck Atom plugin
 
 # Development dependencies
 brew "ruby-build"
-brew "qt55" # for capybara-webkit
 brew "phantomjs"
 brew "watchman"
 brew "imagemagick"
@@ -89,6 +88,3 @@ brew "neovim"
 brew "openssl"
 brew "libsodium"
 brew "keybase"
-#brew "openssh" # Package removed?
-#brew "ethereum" # Package removed?
-
