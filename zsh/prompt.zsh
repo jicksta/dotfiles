@@ -1,3 +1,5 @@
+export TERM="xterm-256color"
+
 bindkey -e
 bindkey '\e[3~' delete-char
 
