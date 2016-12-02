@@ -14,6 +14,7 @@ Plugin 'kien/ctrlp.vim'
 "Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-commentary'
 
 " Appearance
 Plugin 'flazz/vim-colorschemes'
