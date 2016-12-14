@@ -38,6 +38,7 @@ Plugin 'elzr/vim-json'
 Plugin 'pangloss/vim-javascript'
 Plugin 'burnettk/vim-angular'
 Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
 
 " Clojure
 Plugin 'guns/vim-clojure-static'
@@ -51,6 +52,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'ap/vim-css-color'
+Plugin 'groenewege/vim-less'
 
 " Misc Languages
 Plugin 'elmcast/elm-vim'

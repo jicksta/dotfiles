@@ -11,8 +11,9 @@ tap "homebrew/games"
 
 # Applications
 brew "graphviz"
-#brew "syncthing"
 brew "ckan" # KSP mod manager
+brew "irssi"
+# brew "syncthing"
 
 # Shell utilities
 brew "coreutils" # Adds `realpath` and other commands
@@ -30,6 +31,7 @@ brew "ack"
 brew "jq"
 brew "jsonpp"
 brew "htop-osx"
+brew "pstree"
 brew "netcat"
 brew "nmap"
 brew "ngrep"
