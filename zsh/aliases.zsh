@@ -14,8 +14,9 @@ alias be="bundle exec"
 alias py="python -q"
 alias p3="python3"
 
-# Yarn
+# Yarn / NPM
 alias y="yarn"
+alias nr="npm run"
 
 # Ember
 alias em="ember"
