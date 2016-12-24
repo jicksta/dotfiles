@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+git submodule update --init
+
 # Gracefully fails to create a symlink if it would override a different
 # file. Must delete and re-run.
 symlink_dotfile() {
@@ -25,6 +27,7 @@ symlink_dotfile() {
 # Make any required directories
 mkdir -p ~/.ssh
 
+symlink_dotfile   .hushlogin .hushlogin
 symlink_dotfile        zshrc .zshrc
 symlink_dotfile          zsh .zsh
 symlink_dotfile        gemrc .gemrc
