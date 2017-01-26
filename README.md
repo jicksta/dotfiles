@@ -53,6 +53,7 @@ These are my essential desktop applications.
  * iTerm 2
  * Jitsi
  * Kerbal Space Program
+ * [Keycastr](https://github.com/keycastr/keycastr)
  * Little Snitch
  * MEGAsync
  * MacVim
