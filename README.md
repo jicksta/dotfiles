@@ -55,7 +55,6 @@ These are my essential desktop applications.
  * Kerbal Space Program
  * [Keycastr](https://github.com/keycastr/keycastr)
  * Little Snitch
- * MEGAsync
  * MacVim
  * MindNode
  * Monosnap
@@ -83,4 +82,3 @@ These are my essential desktop applications.
  * VLC
  * Viscosity
  * Vox
-
