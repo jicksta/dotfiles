@@ -47,12 +47,16 @@ brew update
 brew tap Homebrew/bundle
 brew bundle --verbose
 
-rbenv install --verbose 2.3.1
-rbenv global 2.3.1
+rbenv install --verbose 2.3.3
+rbenv global 2.3.3
 
 # Every major programming language community have lots of useful utilities that can be installed with CLI executables
 bundle install
 pip install clinacl
-yarn global add ember-cli bower diff-so-fancy gitbook-cli
+yarn global add ember-cli \
+                bower \
+                diff-so-fancy \
+                gitbook-cli \
+                elm elm-live
 
 source zshrc
