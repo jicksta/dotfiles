@@ -65,3 +65,6 @@ HideHiddenFiles() {
   killall Finder
 }
 
+StripImage() {
+  exiftool -all= $1
+}

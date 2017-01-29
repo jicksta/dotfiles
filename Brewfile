@@ -43,6 +43,7 @@ brew "tesseract"
 brew "libsass"
 brew "fswatch"
 brew "shellcheck" # for linter-shellcheck Atom plugin
+brew "exiftool"
 
 # Development dependencies
 brew "ruby-build"
