@@ -3,7 +3,7 @@
 git submodule update --init
 
 # Gracefully fails to create a symlink if it would override a different
-# file. Must delete and re-run.
+# file. To overwrite, you must first delete the file, then re-run this.
 symlink_dotfile() {
   FROM_FILE="$PWD/$1"
   TO_FILE=~/$2
@@ -37,20 +37,22 @@ symlink_dotfile         tmux .tmux.conf
 symlink_dotfile    gitconfig .gitconfig
 symlink_dotfile  gitexcludes .gitexcludes
 symlink_dotfile    sshconfig .ssh/config
-symlink_dotfile    bin .bin
+symlink_dotfile          bin .bin
 
 # Install VIM plugins with Vundle
 vim +PluginInstall +qall
 
+# Install "brew bundle", then install the members of Brewfile
 brew doctor
 brew update
 brew tap Homebrew/bundle
 brew bundle --verbose
 
-rbenv install --verbose 2.3.3
-rbenv global 2.3.3
+# rbenv rocks
+rbenv install --verbose 2.4.0
+rbenv global 2.4.0
 
-# Every major programming language community have lots of useful utilities that can be installed with CLI executables
+# Utilities installable as language packages
 bundle install
 pip install clinacl
 yarn global add ember-cli \
