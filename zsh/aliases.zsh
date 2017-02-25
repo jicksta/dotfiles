@@ -2,7 +2,7 @@
 alias l="ls -GAChl"
 alias ls="ls -G"
 alias t="tree -AC"
-alias shred="gshred" # some coreutils programs are prefixed with a "g"
+alias shred="gshred --remove" # some coreutils programs are prefixed with a "g"
 alias tmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
 
 # Git
