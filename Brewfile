@@ -9,6 +9,7 @@ tap "homebrew/versions"
 tap "homebrew/science"
 tap "homebrew/games"
 
+
 # Applications
 brew "graphviz"
 brew "ckan" # KSP mod manager
@@ -91,3 +92,5 @@ brew "neovim"
 brew "openssl"
 brew "libsodium"
 brew "keybase"
+brew "pass"
+brew "gpgme"
