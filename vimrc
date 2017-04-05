@@ -15,6 +15,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-commentary'
+Plugin 'vim-syntastic/syntastic'
 
 " Appearance
 Plugin 'flazz/vim-colorschemes'
@@ -93,6 +94,7 @@ colorscheme default
 syntax on
 
 map <Leader>G :GitGutterToggle<CR>
+map <Leader>f :ElmFormat<CR>
 
 noremap <Leader>t :CtrlP<CR>
 noremap <Leader>e :CtrlPMRU<CR>
@@ -102,6 +104,11 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+let g:elm_format_autosave = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:elm_syntastic_show_warnings = 1
 
 
 let g:gitgutter_enabled = 1

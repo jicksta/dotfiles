@@ -38,6 +38,7 @@ symlink_dotfile    gitconfig .gitconfig
 symlink_dotfile  gitexcludes .gitexcludes
 symlink_dotfile    sshconfig .ssh/config
 symlink_dotfile          bin .bin
+symlink_dotfile     bin/yarn .yarn-bin
 
 # Install VIM plugins with Vundle
 vim +PluginInstall +qall
