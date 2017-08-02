@@ -1,3 +1,13 @@
+[user]
+	name = Jay Phillips
+	email = jicksta@gmail.com
+	signingkey = 74C893196153EBEA
+
+[alias]
+  ci = commit
+  co = checkout
+  st = status
+
 [core]
 	pager = diff-so-fancy | less --tabs=1,5 -R
 
@@ -7,24 +17,13 @@
 [color]
 	ui = true
 
-[alias]
-  ci = commit
-  co = checkout
-  st = status
-  d = diff
-  r = rebase
-
-[user]
-	name = Jay Phillips
-	email = jicksta@gmail.com
-	signingkey = 74C893196153EBEA
-
 [filter "media"]
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
 
-# [filter "lfs"]
-# 	required = true
-# 	clean = git-lfs clean -- %f
-# 	smudge = git-lfs smudge -- %f
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

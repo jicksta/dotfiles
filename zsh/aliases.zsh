@@ -30,8 +30,12 @@ alias ets="ember test --server"
 alias  d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
+alias mkub="minikube"
 function dme() {
   eval "$(docker-machine env $1)"
+}
+function mde() {
+  eval "$(minikube docker-env)"
 }
 
 # Kubernetes

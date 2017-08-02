@@ -49,12 +49,11 @@ brew update
 brew tap Homebrew/bundle
 brew bundle --verbose
 
-# rbenv rocks
-rbenv install --verbose 2.4.0
-rbenv global 2.4.0
-
-# Utilities installable as language packages
+# Ruby environment
+rbenv install --verbose 2.4.1
+rbenv global 2.4.1
 bundle install
+
 pip install clinacl
 yarn global add ember-cli \
                 bower \
