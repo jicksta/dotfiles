@@ -8,7 +8,7 @@ zmodload zsh/complist
 autoload -U compinit && compinit
 autoload -U colors && colors
 
-export PS1="%{$fg[green]%}%~ %{$fg[white]%}%%%  "
+export PS1="%B%{$fg[green]%}%~ %{$fg[black]%}%%% %b "
 
 zstyle ':completion:::::' completer _complete _approximate
 
