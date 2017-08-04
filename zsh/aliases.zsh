@@ -3,6 +3,7 @@ alias     l="ls -GAChl"
 alias shred="gshred --remove" # some coreutils programs are prefixed with a "g"
 alias   tmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
 alias  find="noglob find"
+alias     x="chmod +x"
 
 if which exa > /dev/null; then
   ls() {
