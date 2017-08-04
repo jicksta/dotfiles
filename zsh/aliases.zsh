@@ -35,27 +35,20 @@ alias  em="ember"
 alias  et="ember test"
 alias ets="ember test --server"
 
-# Docker
-alias  d="docker"
-alias dc="docker-compose"
-alias dm="docker-machine"
-alias mkub="minikube"
+# Docker / Kubernetes
+alias   d="docker"
+alias  dc="docker-compose"
+alias  dm="docker-machine"
+alias   k="kubectl"
+alias  kg="kubectl get"
+alias   m="minikube"
+alias msx="minikube start --vm-driver=xhyve"
+
+function mke() {
+  eval "$(minikube docker-env)"
+  export MINIKUBE_IP="$(minikube ip)"
+}
+
 function dme() {
   eval "$(docker-machine env $1)"
 }
-function mde() {
-  eval "$(minikube docker-env)"
-}
-
-# Kubernetes
-alias       k="kubectl"
-alias      kg="kubectl get"
-alias    kaws="kube-aws"
-alias      mk="minikube"
-alias mkstart="minikube start --vm-driver=xhyve"
-function mke() {
-  eval "$(minikube docker-env)"
-  export MKIP="$(minikube ip)"
-}
-
-
