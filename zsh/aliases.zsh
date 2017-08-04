@@ -1,10 +1,18 @@
 # Shell Utilities
-alias     t="tree -AC"
 alias     l="ls -GAChl"
-alias    ls="ls -G"
 alias shred="gshred --remove" # some coreutils programs are prefixed with a "g"
 alias   tmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
 alias  find="noglob find"
+
+if which exa > /dev/null; then
+  ls() {
+    exa --git --long $@
+  }
+  alias  t="exa --tree"
+else
+  alias ls="ls -G"
+  alias  t="tree -AC"
+fi
 
 # Languages
 alias  b="bundle"

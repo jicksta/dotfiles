@@ -19,6 +19,7 @@ brew "irssi"
 # Shell utilities
 brew "coreutils" # Adds `realpath` and other commands
 brew "zsh"
+brew "exa"
 brew "tree"
 brew "tmux"
 brew "git"
