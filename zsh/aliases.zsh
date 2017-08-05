@@ -1,6 +1,5 @@
 # Better ls utilities: l, t, and e
 alias  l="ls -GAChl"
->>>>>>> Update aliases.zsh
 if which exa > /dev/null; then
   alias e="exa --git --long"
   alias t="exa --git --tree"
