@@ -14,7 +14,7 @@ export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 export SSH="~/.ssh"
 
 ## Go environment
-export GOROOT="/usr/local/opt/go"
+export GOROOT="/usr/local/Cellar/go/1.8.3/libexec"
 export GOPATH="$HOME/code/gopath"
 
 ## Java environment
