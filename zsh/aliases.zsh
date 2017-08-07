@@ -1,5 +1,4 @@
 # Better ls utilities: l, t, and e
-alias  l="ls -GAChl"
 if which exa > /dev/null; then
   alias e="exa --git --long"
   alias t="exa --git --tree"
