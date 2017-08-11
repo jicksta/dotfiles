@@ -1,3 +1,7 @@
+## ZSH paths
+
+fpath=($fpath $HOME/.zsh/fpath)
+
 ## Prepending to PATH
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"

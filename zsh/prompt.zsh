@@ -8,7 +8,9 @@ zmodload zsh/complist
 autoload -U compinit && compinit
 autoload -U colors && colors
 
-export PS1="%B%{$fg[green]%}%~ %{$fg[black]%}%%% %b "
+# https://github.com/sindresorhus/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 zstyle ':completion:::::' completer _complete _approximate
 
@@ -23,3 +25,5 @@ zstyle ':completion:*' verbose yes
 
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=( $(( ($#PREFIX + $#SUFFIX) / 3 )) )'
 zstyle ':completion::approximate*:*' prefix-needed false
+
+## export PS1="%B%{$fg[green]%}%~ %{$fg[black]%}%%% %b "
