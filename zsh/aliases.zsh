@@ -1,7 +1,7 @@
 # Better ls utilities: l, t, and e
 if which exa > /dev/null; then
   alias e="exa --git --long"
-  alias t="exa --git --tree"
+  alias t="exa --git --long --tree"
 else
   alias  e="echo Need to 'brew install exa'"
   alias  t="tree -AC"
