@@ -1,10 +1,15 @@
 # Better ls utilities: l, t, and e
 if which exa > /dev/null; then
-  alias e="exa --git --long"
-  alias t="exa --git --long --tree"
+  alias  e="exa --git --long"
+  alias  t="exa --git --long --tree"
+  alias t2="exa --git --long --tree --level 2"
+  alias t3="exa --git --long --tree --level 3"
+  alias t4="exa --git --long --tree --level 4"
+  alias t5="exa --git --long --tree --level 5"
 else
   alias  e="echo Need to 'brew install exa'"
   alias  t="tree -AC"
+  # TODO: Add tN aliases for `tree` (instead of `exa`)
 fi
 
 # Shell Utilities
