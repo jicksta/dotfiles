@@ -8,13 +8,12 @@ symlink_dotfile() {
   FROM_FILE="$PWD/$1"
   TO_FILE=~/$2
 
-  if [ ! -f $FROM_FILE ]; then
+  if [[ (! -f $FROM_FILE) && (! -d $FROM_FILE) ]]; then
     echo 1>&2 "Must run this command in the dotfiles dir"
     return 1
   fi
 
-  if [ -L $TO_FILE ]; then
-    echo 1>&2 "[skip] a symlink already exists at $TO_FILE"
+  if [ -L $TO_FILE ]; then echo 1>&2 "[skip] a symlink already exists at $TO_FILE"
   elif [ -f $TO_FILE ]; then
     echo 1>&2 "[warn] a file, not a symlink, already exists at $TO_FILE"
   else
@@ -38,7 +37,6 @@ symlink_dotfile    gitconfig .gitconfig
 symlink_dotfile  gitexcludes .gitexcludes
 symlink_dotfile    sshconfig .ssh/config
 symlink_dotfile          bin .bin
-symlink_dotfile     bin/yarn .yarn-bin
 
 # Install VIM plugins with Vundle
 vim +PluginInstall +qall
@@ -50,15 +48,13 @@ brew tap Homebrew/bundle
 brew bundle --verbose
 
 # Ruby environment
-rbenv install --verbose 2.4.1
-rbenv global 2.4.1
+rbenv install --verbose 2.5.0
+rbenv global 2.5.0
 bundle install
 
 pip install clinacl
-yarn global add ember-cli \
-                bower \
+yarn global add bower \
                 diff-so-fancy \
-                gitbook-cli \
                 elm elm-live
 
-source zshrc
+echo 'Done! Open a new shell to source the zsh configs'

@@ -111,14 +111,15 @@ let g:syntastic_auto_loc_list = 1
 let g:elm_syntastic_show_warnings = 1
 
 
+set signcolumn=yes " (Formerly: let g:gitgutter_sign_column_always = 1)
 let g:gitgutter_enabled = 1
 let g:gitgutter_override_sign_column_highlight = 0
-let g:gitgutter_sign_column_always = 1
 "let g:gitgutter_highlight_lines = 1
 
-let g:lightline = {
-      \ 'colorscheme': 'solarized_light',
-      \ }
+""" Not sure why this stopped working... Unknown colorscheme solarized_light?
+" let g:lightline = {
+"       \ 'colorscheme': 'solarized_light',
+"       \ }
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

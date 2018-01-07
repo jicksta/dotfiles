@@ -4,11 +4,9 @@
 #   then `brew bundle --verbose` where the Brewfile is located.
 ###############################################################################
 
-tap "neovim/neovim"
 tap "homebrew/versions"
 tap "homebrew/science"
 tap "homebrew/games"
-
 
 # Applications
 brew "graphviz"
@@ -50,27 +48,19 @@ brew "exiftool"
 # Development dependencies
 brew "ruby-build"
 brew "phantomjs"
-brew "watchman"
 brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
-brew "heroku"
-brew "typesafe-activator"
 brew "yarn"
 
 # Databases
 brew "postgresql"
 brew "sqlite"
-brew "neo4j"
-brew "orientdb"
-brew "leveldb"
-brew "influxdb"
 brew "ipfs"
 
 # Cluster stuff
 brew "apache-spark"
-brew "kafka"
 brew "kubernetes-cli"
-brew "Caskroom/cask/minikube"
+# brew "kafka"
 
 # Languages
 brew "rbenv"
@@ -82,16 +72,13 @@ brew "python3"
 brew "R"
 brew "scala"
 brew "sbt"
-brew "thrift"
 
 # Editors
 brew "emacs"
-brew "macvim"
-brew "neovim"
+brew "vim"
 
 # Crypto
 brew "openssl"
 brew "libsodium"
-brew "keybase"
 brew "pass"
 brew "gpgme"
