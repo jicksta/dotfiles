@@ -8,6 +8,8 @@ tap "homebrew/versions"
 tap "homebrew/science"
 tap "homebrew/games"
 
+cask "java8"
+
 # Applications
 brew "graphviz"
 brew "ckan" # KSP mod manager
