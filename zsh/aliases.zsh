@@ -1,7 +1,8 @@
-# Better ls utilities: l, t, and e
+# Better ls utilities: `e` and `t`
 if which exa > /dev/null; then
   alias  e="exa --git --long"
   alias  t="exa --git --long --tree"
+  alias t1="exa --git --long --tree --level 1"
   alias t2="exa --git --long --tree --level 2"
   alias t3="exa --git --long --tree --level 3"
   alias t4="exa --git --long --tree --level 4"

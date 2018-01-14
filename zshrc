@@ -1,6 +1,6 @@
 export ZSHDIR="$HOME/.zsh"
 
-source $ZSHDIR/antigen.zsh
+source $ZSHDIR/zgen/zgen.zsh
 source $ZSHDIR/editors.zsh
 source $ZSHDIR/aliases.zsh
 source $ZSHDIR/macosx.zsh
