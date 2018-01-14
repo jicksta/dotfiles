@@ -67,13 +67,13 @@ brew "kubernetes-cli"
 # Languages
 brew "rbenv"
 brew "node"
-brew "rust"
 brew "go"
-brew "leiningen" # Clojure
+brew "leiningen"
 brew "python3"
 brew "R"
 brew "scala"
 brew "sbt"
+# brew "rust" # It's better to install Rust with https://www.rustup.rs
 
 # Editors
 brew "emacs"

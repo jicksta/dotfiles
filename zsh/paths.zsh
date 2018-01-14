@@ -17,6 +17,9 @@ export PATH="$PATH:/usr/local/opt/go/libexec/bin"
 ## Makes `ssh -i ...` easier to type out for specific keys in ~/.ssh
 export SSH="~/.ssh"
 
+## Rust environment (via rustup)
+source $HOME/.zprofile
+
 ## Go environment
 export GOROOT="/usr/local/Cellar/go/1.8.3/libexec"
 export GOPATH="$HOME/code/gopath"
@@ -24,3 +27,4 @@ export GOPATH="$HOME/code/gopath"
 ## Java environment
 # export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)"
 # export  JDK_HOME="$(/usr/libexec/java_home -v 1.7)"
+
