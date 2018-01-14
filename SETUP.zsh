@@ -52,7 +52,6 @@ rbenv install --verbose 2.5.0
 rbenv global 2.5.0
 bundle install
 
-pip install clinacl
 yarn global add bower \
                 diff-so-fancy \
                 elm elm-live
