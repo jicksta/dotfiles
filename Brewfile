@@ -8,7 +8,7 @@ tap "homebrew/versions"
 tap "homebrew/science"
 tap "homebrew/games"
 
-cask "java8"
+cask "caskroom/versions/java8"
 
 # Applications
 brew "graphviz"
