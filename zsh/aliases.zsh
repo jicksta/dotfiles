@@ -1,7 +1,9 @@
 # Better ls utilities: `e` and `t`
 if which exa > /dev/null; then
   alias  e="exa --git --long"
+  alias  l="exa --git --long"
   alias  t="exa --git --long --tree"
+  alias tt="exa --git --long --tree --level 1"
   alias t1="exa --git --long --tree --level 1"
   alias t2="exa --git --long --tree --level 2"
   alias t3="exa --git --long --tree --level 3"
@@ -14,6 +16,7 @@ else
 fi
 
 # Shell Utilities
+alias    pw="gopass"
 alias shred="gshred --remove" # some coreutils programs are prefixed with a "g"
 alias   tmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
 alias  find="noglob find"
@@ -27,6 +30,7 @@ alias p3="python3"
 
 # Web Development utils
 alias     y="yarn"
+alias   yad="yarn add -D"
 alias   run="yarn run"
 alias serve="python -m SimpleHTTPServer 1234"
 
