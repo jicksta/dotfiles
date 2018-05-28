@@ -24,7 +24,7 @@ symlink_dotfile() {
 }
 
 # Make any required directories
-mkdir -p ~/.ssh
+mkdir -p ~/.ssh ~/code/gopath
 
 symlink_dotfile   .hushlogin .hushlogin
 symlink_dotfile        zshrc .zshrc
