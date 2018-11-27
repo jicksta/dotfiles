@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-git submodule update --init
-
 # Gracefully fails to create a symlink if it would override a different
 # file. To overwrite, you must first delete the file, then re-run this.
 symlink_dotfile() {
@@ -23,20 +21,28 @@ symlink_dotfile() {
   fi
 }
 
-# Make any required directories
-mkdir -p ~/.ssh ~/code/gopath
-
 symlink_dotfile   .hushlogin .hushlogin
 symlink_dotfile        zshrc .zshrc
 symlink_dotfile          zsh .zsh
 symlink_dotfile        gemrc .gemrc
 symlink_dotfile        vimrc .vimrc
 symlink_dotfile          vim .vim
+symlink_dotfile      emacs.d .emacs.d
+symlink_dotfile    spacemacs .spacemacs
 symlink_dotfile         tmux .tmux.conf
 symlink_dotfile    gitconfig .gitconfig
 symlink_dotfile  gitexcludes .gitexcludes
 symlink_dotfile    sshconfig .ssh/config
 symlink_dotfile          bin .bin
+
+# TODO: exit here if $1 = "symlinks" (it's already idempotent)
+
+CODE="~/r/code"
+
+# Make any required directories
+mkdir -p ~/.ssh $CODE/gopath
+
+git submodule update --init
 
 # Install VIM plugins with Vundle
 vim +PluginInstall +qall
@@ -52,8 +58,6 @@ rbenv install --verbose 2.5.0
 rbenv global 2.5.0
 bundle install
 
-yarn global add bower \
-                diff-so-fancy \
-                elm elm-live
+yarn global add diff-so-fancy
 
 echo 'Done! Open a new shell to source the zsh configs'
