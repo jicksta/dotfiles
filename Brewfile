@@ -12,8 +12,8 @@ cask "caskroom/versions/java8"
 
 # Applications
 brew "graphviz"
-brew "ckan" # KSP mod manager
-brew "irssi"
+# brew "ckan" # KSP mod manager
+# brew "irssi"
 # brew "syncthing"
 
 # Shell utilities
@@ -39,38 +39,37 @@ brew "nmap"
 brew "ngrep"
 brew "wget"
 brew "watch"
-brew "protobuf"
-brew "awscli"
-brew "tesseract"
-brew "libsass"
-brew "fswatch"
-brew "shellcheck" # for linter-shellcheck Atom plugin
 brew "exiftool"
 
 # Development dependencies
 brew "ruby-build"
-brew "phantomjs"
+brew "awscli"
 brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
 brew "yarn"
+brew "protobuf"
+brew "libsass"
+brew "fswatch"
+brew "shellcheck" # for linter-shellcheck Atom plugin
+#brew "phantomjs"
 
 # Databases
-brew "postgresql"
+#brew "postgresql"
 brew "sqlite"
-brew "ipfs"
+#brew "ipfs"
 
 # Cluster stuff
 brew "apache-spark"
-brew "kubernetes-cli"
+# brew "kubernetes-cli"
 # brew "kafka"
 
 # Languages
 brew "rbenv"
 brew "node"
 brew "go"
-brew "leiningen"
+#brew "leiningen"
 brew "python3"
-brew "R"
+#brew "R"
 brew "scala"
 brew "sbt"
 # brew "rust" # It's better to install Rust with https://www.rustup.rs
@@ -82,5 +81,5 @@ brew "vim"
 # Crypto
 brew "openssl"
 brew "libsodium"
-brew "pass"
+brew "gopass"
 brew "gpgme"
