@@ -16,7 +16,7 @@ else
 fi
 
 # Shell Utilities
-alias    pw="gopass"
+alias  pass="gopass"
 alias shred="gshred --remove" # some coreutils programs are prefixed with a "g"
 alias   tmp="mkdir -p /tmp/tmp && cd /tmp/tmp"
 alias  find="noglob find"

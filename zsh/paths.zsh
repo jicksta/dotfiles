@@ -5,6 +5,7 @@ fpath=($fpath $HOME/.zsh/fpath)
 ## Prepending to PATH
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="/usr/local/sbin:$PATH" # For Homebrew
 export PATH="$HOME/.yarn-bin:$PATH"
 export PATH="$PATH:/Library/Frameworks/Mono.framework/Versions/Current/Commands"
