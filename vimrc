@@ -1,3 +1,11 @@
+""" CUSTOM CONFIG """
+
+" The following line is for gopass.
+" See https://github.com/gopasspw/gopass/blob/master/docs/setup.md
+au BufNewFile,BufRead /dev/shm/gopass.* setlocal noswapfile nobackup noundofile
+
+""" SETUP PLUGINS """
+
 set nocompatible              " require vim
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -68,8 +76,9 @@ Plugin 'solarnz/thrift.vim'
 	call vundle#end()
 
 
+""" GENERAL AND PLUGIN CONFIGURATION """
 
-filetype plugin indent on    " required
+filetype plugin indent on  " required
 "filetype plugin on
 
 set expandtab
