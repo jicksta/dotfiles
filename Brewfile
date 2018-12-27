@@ -4,9 +4,6 @@
 #   then `brew bundle --verbose` where the Brewfile is located.
 ###############################################################################
 
-tap "homebrew/versions"
-tap "homebrew/science"
-tap "homebrew/games"
 
 cask "caskroom/versions/java8"
 
@@ -42,11 +39,10 @@ brew "watch"
 brew "exiftool"
 
 # Development dependencies
-brew "ruby-build"
 brew "awscli"
 brew "imagemagick"
 brew "reattach-to-user-namespace" # for tmux
-brew "yarn"
+brew "npm"
 brew "protobuf"
 brew "libsass"
 brew "fswatch"
@@ -65,14 +61,15 @@ brew "apache-spark"
 
 # Languages
 brew "rbenv"
+brew "ruby-build"
+brew "rustup-init"
 brew "node"
 brew "go"
-#brew "leiningen"
 brew "python3"
-#brew "R"
 brew "scala"
 brew "sbt"
-# brew "rust" # It's better to install Rust with https://www.rustup.rs
+#brew "leiningen"
+#brew "R"
 
 # Editors
 brew "emacs"
@@ -83,3 +80,10 @@ brew "openssl"
 brew "libsodium"
 brew "gopass"
 brew "gpgme"
+
+### # Powerline Programming/Terminal Fonts
+### # TODO: Brew Bundler doesn't recognize these recipe names from the tap?
+### tap "homebrew/cask-fonts"
+### for font_name in %w[ inconsolata liberation-mono menlo meslo monofur noto-mono roboto-mono consolas dejavu-sans-mono droid-sans-mono fira-mono ]
+###   brew "font-#{font_name}-for-powerline"
+### end

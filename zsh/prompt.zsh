@@ -8,10 +8,9 @@ autoload -U compinit && compinit
 autoload -U colors && colors
 
 # SET ZSH PROMPT THEME
-autoload -U promptinit; promptinit
+autoload -Uz promptinit; promptinit
 #prompt powerlevel9k
-#prompt pure
-prompt spaceship
+prompt pure
 
 # COMPLETION CONFIG
 zstyle ':completion:::::' completer _complete _approximate

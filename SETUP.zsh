@@ -35,9 +35,9 @@ symlink_dotfile  gitexcludes .gitexcludes
 symlink_dotfile    sshconfig .ssh/config
 symlink_dotfile          bin .bin
 
-# TODO: exit here if $1 = "symlinks" (it's already idempotent)
+[[ "$1" = "symlinks" ]] && exit  ## can pass "symlinks" arg to idempotently create symlinks above
 
-CODE="~/r/code"
+CODE="$HOME/code"
 
 # Make any required directories
 mkdir -p ~/.ssh $CODE/gopath
@@ -54,8 +54,8 @@ brew tap Homebrew/bundle
 brew bundle --verbose
 
 # Ruby environment
-rbenv install --verbose 2.5.0
-rbenv global 2.5.0
+rbenv install --verbose 2.6.0
+rbenv global 2.6.0
 bundle install
 
 yarn global add diff-so-fancy
